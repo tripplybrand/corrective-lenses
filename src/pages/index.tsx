@@ -13,17 +13,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Lapsang Souchong</title>
+        <title>Corrective Lenses</title>
         <meta charSet="utf-8"></meta>
-        <meta name="description" content="A poem by Michael Dechane"></meta>
+        <meta name="description" content="A poem by Julie Sumner"></meta>
         <meta
           property="og:title"
-          content="Lapsang Souchong"
+          content="Corrective Lenses"
           key="ogtitle"
         ></meta>
         <meta
           property="og:description"
-          content="A poem by Michael Dechane"
+          content="A poem by Julie Sumner"
           key="ogdesc"
         />
         <meta
@@ -39,11 +39,11 @@ export default function Home() {
               tw`pb-4 font-body font-bold text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl`,
               css`
                 animation: from-on-to-past 3s forwards ease-out;
-                color: #ffba75;
+                color: #788e5b;
               `,
             ]}
           >
-            Lapsang Souchong
+            Corrective Lenses
           </h1>
           {stanzas.map((lines, stanzaIdx) => {
             const previousStanzas = stanzas.slice(0, stanzaIdx)
@@ -89,7 +89,7 @@ export default function Home() {
                         : 'SCROLL_BEFORE'
                     }
                   >
-                    — Michael Dechane
+                    — Julie Sumner
                   </Attribution>
                 ) : null}
               </Paragraph>
@@ -151,7 +151,7 @@ function Line({
         tw`block opacity-0 font-body font-medium xs:font-normal text-xs xs:text-lg sm:text-xl md:text-xl lg:text-2xl`,
         css`
           animation: ${state.context.animation};
-          color: #ffba75;
+          color: #788e5b;
         `,
       ]}
     >
@@ -189,7 +189,7 @@ function Attribution({
         tw`block pt-2 opacity-0 font-body font-normal text-right text-xs xs:text-sm sm:text-base md:text-base lg:text-lg`,
         css`
           animation: ${state.context.animation};
-          color: #ffba75;
+          color: #788e5b;
         `,
       ]}
     >
@@ -202,23 +202,28 @@ function Attribution({
 
 const stanzas = [
   [
-    'In China someone closed your leaves',
-    'in tiny fists that grip the smoke',
-    'that dried you. A world away I wait',
-    'by another fire. The cup waits',
-    'with me. The little blue dragon',
-    'that lives in my stove does his work.',
-    'The kettle begins to sing',
-    'the one note of its one song.',
-    'The day becomes itself beyond',
-    'the glass of the kitchen window.',
-    'I pour the kettle and you become',
-    'again yourself, but haunted now',
-    'by memory of a distant fire.',
-    'In this steam rising as smoke',
-    'I remember myself, who I was,',
-    'before I knew all night the flames,',
-    'before I tasted you, or knew your name.',
+    'Each morning before I put them on, the world',
+    'is a blur—a car crash waiting to happen',
+    'or a Monet painting depending upon',
+    'a certain point of view.',
+  ],
+  [
+    'What becomes pre-eminent is shadow',
+    'and shape and light and space',
+    'between the beginning of one thing',
+    'or the ending of another',
+  ],
+  [
+    'and things in aggregate become clearer',
+    'than the thing that’s singular, my mind',
+    'able to better consider the whole green',
+    'arch of the forested brow of land',
+  ],
+  [
+    'a quarter mile to the west, set free',
+    'from focus diverted by limbs and leaves,',
+    'and always I feel my shortcoming sharpened,',
+    'unable to see both ways at the same time.',
   ],
 ]
 

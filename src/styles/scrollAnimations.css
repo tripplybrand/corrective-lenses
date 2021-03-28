@@ -19,41 +19,41 @@
 @keyframes from-on-to-past {
   from {
     opacity: 1;
-    color: #FFBA75;
+    color: #788E5B;
   }
   to {
     opacity: 1;
-    color: #F9F7F8;
+    color: #141921;
   }
 }
 @keyframes from-past-to-on {
   from {
     opacity: 1;
-    color: #F9F7F8;
+    color: #141921;
   }
   to {
     opacity: 1;
-    color: #FFBA75;
+    color: #788E5B;
   }
 }
 
 @keyframes attribution-in {
   from {
     opacity: 0;
-    color: #FFBA75;
+    color: #788E5B;
   }
   to {
     opacity: 1;
-    color: #F9F7F8;
+    color: #141921;
   }
 }
 @keyframes attribution-out {
   from {
     opacity: 1;
-    color: #F9F7F8;
+    color: #141921;
   }
   to {
     opacity: 0;
-    color: #FFBA75;
+    color: #788E5B;
   }
 }

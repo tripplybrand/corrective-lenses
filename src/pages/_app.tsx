@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import '../styles/globals.css'
 import '../styles/scrollAnimations.css'
+import Image from 'next/image'
 import tw, { css, GlobalStyles } from 'twin.macro'
 
 type ComponentWithPageLayout = {
@@ -12,24 +13,22 @@ type ComponentWithPageLayout = {
 function App({ Component, pageProps }: AppProps & ComponentWithPageLayout) {
   return (
     <>
-      <div tw="fixed overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="Steam_Tea_Still.jpg"
-          tw="object-cover w-screen h-screen"
-        >
-          <source src="Steaming_Tea_Loop_Shorter.mp4" type="video/mp4" />
-        </video>
-        Sorry, your browser doesn't support embedded videos.
+      <div tw="fixed overflow-hidden w-screen h-screen">
+        <Image
+          src="/Madeira_Blur.JPG"
+          alt="View of mountain range on Madeira."
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          loading="eager"
+          priority={false}
+        />
       </div>
       {/*Transparent pane between video and text*/}
       <div
         css={[
           css`
-            background-color: hsla(90deg, 6%, 51%, 0.5);
+            background-color: hsla(251deg, 16%, 53%, 0.3);
           `,
           tw`fixed overflow-hidden h-screen w-screen`,
         ]}
