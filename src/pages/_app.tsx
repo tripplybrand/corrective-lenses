@@ -24,11 +24,11 @@ function App({ Component, pageProps }: AppProps & ComponentWithPageLayout) {
           priority={false}
         />
       </div>
-      {/*Transparent pane between video and text*/}
+      {/*Transparent pane between image and text*/}
       <div
         css={[
           css`
-            background-color: hsla(251deg, 16%, 53%, 0.3);
+            background-color: hsla(260deg, 24%, 58%, 0.5);
           `,
           tw`fixed overflow-hidden h-screen w-screen`,
         ]}
