@@ -28,9 +28,10 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://lapsang-souchong.vercel.app/Tea_Meta.jpg"
+          content="https://corrective-lenses.vercel.app/Correct_Lenses_Meta.jpg"
           key="ogimage"
         ></meta>
+        <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
       <div tw="flex justify-center my-0 mx-auto min-h-screen sticky top-0">
         <div tw="py-10 whitespace-nowrap">
